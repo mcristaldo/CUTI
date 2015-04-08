@@ -1,3 +1,3 @@
 # CUTI
 CUTI maquetado
-Autores: Martín Cristaldo y Federico Bracesco
+Autores: Martín Cristaldo y Federico Bracesco.
