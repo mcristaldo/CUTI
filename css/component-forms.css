@@ -1,0 +1,86 @@
+/*  Formulario    */
+.frm {}
+.frm .fld-grp{}
+.frm .fld-grp .fld {}
+.frm .fld-grp .fld.hidden{display: none}
+.frm .fld-grp .fld .lbl{}
+.frm .fld-grp .fld .lbl > b{}
+.frm .actions {}
+
+.frm .fld input::-webkit-input-placeholder ,
+.frm .fld select::-webkit-input-placeholder,
+.frm .fld textarea::-webkit-input-placeholder{ color:_negro_b204_;font-weight: normal;}
+.frm .fld input:-moz-placeholder,
+.frm .fld select:-moz-placeholder,
+.frm .fld textarea:-moz-placeholder{color:_negro_b204_;font-weight: normal;}
+/*<bwr:ie8>*/
+.frm .fld .placeholder {color:_negro_b204_!important;font-weight: normal;}
+/*</bwr:ie8>*/
+.frm .fld input,
+.frm .fld select,
+.frm .fld textarea,
+.frm .fld input:focus,
+.frm .fld select:focus,
+.frm .fld textarea:focus{}
+.frm .fld textarea{resize:vertical;font-family:inherit;}
+.sending .actions .btn {line-height: 150px;cursor:default;overflow:hidden;border:none;box-shadow:none;background: url('{img:loader-03.gif}') no-repeat center center;}
+
+
+/* frm01 */
+.frm01 { }
+.frm01 .fld-grp{ }
+.frm01 .fld-grp .fld { margin-bottom: 30px;}
+.frm01 .fld-grp .fld .lbl{}
+.frm01 .fld-grp .fld .lbl > b{ display:block; font-size:16px; line-height: 20px; color:_negro_; font-weight: 600;margin-bottom: 10px;}
+.frm01 .fld-grp .fld .lbl > b > .opcional{font-weight: normal;font-style:italic;font-size:.9em;line-height:0;}
+.frm01 .fld-grp .fld .lbl .req { display: inline-block; color:_plight_; font-weight:bold;}
+/* Campos */ 
+.frm01 .fld-grp .fld .lbl > select,
+.frm01 .fld-grp .fld .lbl > textarea,
+.frm01 .fld-grp .fld .lbl > input[type="password"],
+.frm01 .fld-grp .fld .lbl > input[type="email"],
+.frm01 .fld-grp .fld .lbl > input[type="text"] { padding:10px;height: 50px; display:block; background: _blanco_; border:1px solid _border_; border-radius:2px; box-sizing:border-box; font-size:15px; color:_negro_; line-height: 20px; }
+.frm01 .fld-grp .fld .lbl > input[type="password"],
+.frm01 .fld-grp .fld .lbl > input[type="email"],
+.frm01 .fld-grp .fld .lbl > input[type="text"] {padding:8px 10px;width: 385px; }
+.frm01 .fld-grp .fld .lbl > select {width: 300px;}
+.frm01 .fld-grp .fld .lbl > input:focus,
+.frm01 .fld-grp .fld .lbl > select:focus,
+.frm01 .fld-grp .fld .lbl > textarea:focus { background:_blanco_; border:2px solid #6eb414;}
+.frm01 .fld-grp .fld .lbl > textarea {  width: 640px; height: 100px; resize:vertical; }
+.frm01 .fld-grp .fld .lbl > textarea[readonly] {min-height:80px; background: _blanco_; font-size:11px; line-height: 15px; color:_text_; height:80px;}
+.frm01 .fld-grp .fld .lbl > input.medium { width: 215px;}
+/*  Error   */
+.frm01 .fld-grp .fld .lbl > strong.err{display:block;font-size:12px;color:_error_;line-height:15px;margin:5px 0}
+.frm01 .fld-grp .fld .lbl > input.err,
+.frm01 .fld-grp .fld .lbl > textarea.err,
+.frm01 .fld-grp .fld .lbl > select.err { background:_blanco_;border:2px solid _error_;color:_error_;}
+/*  Checkbox y radio buttons */
+.frm01 .fld-grp .fld .lbl > label { position: relative;}
+.frm01 .fld-grp .fld .lbl > label > b { font-size: 14px; line-height: 20px; position: relative; display: inline-block; font-weight:normal;  }
+.frm01 .fld-grp .fld .lbl > label > input[type="radio"],
+.frm01 .fld-grp .fld .lbl > label > input[type="checkbox"] { position:absolute; left:0; top:0; visibility: hidden; }
+.frm01 .fld-grp .fld .lbl > label > input[type="radio"] + b,
+.frm01 .fld-grp .fld .lbl > label > input[type="checkbox"] + b { padding-left:30px; }
+.frm01 .fld-grp .fld .lbl > label > input[type="radio"]    + b:before,
+.frm01 .fld-grp .fld .lbl > label > input[type="checkbox"] + b:before { content:""; display:block; background: url('{img:web:bg.png}'); position: absolute; left:0; top:0;}
+.frm01 .fld-grp .fld .lbl > label > input[type="radio"]    + b:before { width:20px; height:20px; background-position:-315px -25px;}
+.frm01 .fld-grp .fld .lbl > label > input[type="checkbox"] + b:before { width:18px; height:18px; background-position:-365px 0;}
+.frm01 .fld-grp .fld .lbl > label > input[type="radio"]:checked + b:before { background-position: -335px -25px;}
+.frm01 .fld-grp .fld .lbl > label > input[type="checkbox"]:checked + b:before { background-position: -385px 0;}
+.frm01 .fld-grp > .row { margin-bottom:20px; }
+.frm01 .fld-grp > .row:after { property: AFTERCLEAR;}
+.frm01 .fld-grp > .row > * { float: left;}
+.frm01 .fld-grp > .row > * + * { float: right;}
+.frm01 .fld-grp > .row > .fld input[type="password"],
+.frm01 .fld-grp > .row > .fld .lbl > input[type="email"],
+.frm01 .fld-grp > .row > .fld .lbl > input[type="text"] { width: 300px;}
+
+/*  Actions */
+.frm01 .actions {position:relative; top:-1px; margin-top:20px;}
+.frm01 .actions:after { property: AFTERCLEAR;}
+.frm01 .actions > .mandatory { font-size: 14px; line-height: 20px; color:_negro_b153_; display: block; margin-top:15px;}
+.frm01 .actions > .mandatory .req { color:_prim_;}
+.frm01 .actions > .btn { }
+
+

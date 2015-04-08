@@ -1,0 +1,19 @@
+/* En esta hoja de estilo se arman todos los estilos de botones.
+ Tener en cuenta que estas clases pueden ser aplicadas a etiquetas button, input u otras
+*/
+
+.btn{ outline:none;display:inline-block; text-decoration: none; border:none; cursor: pointer; font-family:inherit;}
+a.btn{}
+/* btn01 */
+.btn01 { font-size:16px; line-height: 30px; padding:10px 40px; color:_blanco_; border-radius: 3px;  background: _prim_; font-weight: 600; border-bottom: 1px solid _pdark_; box-shadow:0px 1px 0px 0px rgba(0, 0, 0, 0.2); text-transform: uppercase; text-shadow:-1px 0 0 _pdark_; transition:all 0.3s ease-in-out;  }
+.btn01:hover { background: _comp_; border-color:_cdark_; text-shadow:-1px 0 0 _cdark_;}
+
+/* btn02 */
+.btn02 { font-size:16px; line-height: 30px; padding:5px 30px; color:_blanco_; border-radius: 3px;  background: _prim_; font-weight: 600; border-bottom: 1px solid _pdark_; box-shadow:0px 1px 0px 0px rgba(0, 0, 0, 0.2); text-transform: uppercase; text-shadow:-1px 0 0 _pdark_; transition:all 0.3s ease-in-out; }
+.btn02:hover { background:_comp_; border-color:_cdark_;text-shadow:-1px 0 0 _cdark_; }
+
+/* btn03 */
+.btn03 { font-size:15px; line-height: 25px; padding:10px 50px 9px 30px; position: relative; background: _prim_; text-transform: uppercase; color:_blanco_; font-weight: 600; border-radius: 3px; box-shadow: 0px 1px 0 0px rgba(0, 0, 0, 0.2); border-bottom: 1px solid _pdark_; transition: all 0.2s ease-in-out; }
+.btn03:after { content: ""; display: block; width: 8px; height: 12px; background: url({img:web:bg.png}) no-repeat -190px -180px; position: absolute; right:20px; top:16px;  }
+.btn03:hover { color:_blanco_; background:#f39e0a; border-color:#f29409;  }
+

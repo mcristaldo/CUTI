@@ -1,0 +1,51 @@
+/* Estilos genéricos de texto. Por ejemplo cuerpo de la noticia */
+
+.text {margin-bottom:30px;}
+.text > :first-child {margin-top:0 !important;}
+.text > :last-child {margin-bottom:0 !important;}
+.text h1{font-size:22px; line-height: 35px; color:_negro_; font-weight: 600; margin-bottom: 10px;}
+.text h2{ font-size:20px; line-height: 35px; color:_negro_; font-weight: 600;  margin-bottom: 10px;}
+.text h3{ font-size: 18px; line-height: 25px; color:_negro_; font-weight: 600; margin-bottom: 10px; position: relative; top:1px;}
+.text h4{ font-size:16px; line-height: 25px; color:_negro_; font-weight: 600; margin-bottom: 10px; position:relative; top: 2px;}
+.text h5{ font-size: 15px; line-height: 25px; color:_negro_; font-weight: 600; margin-bottom: 10px; position: relative; top:2px;}
+.text h6{ font-size: 14px; line-height: 25px; color:_negro_; font-weight: 600; margin-bottom: 10px; position: relative; top:2px;}
+.text p{ font-size:16px; line-height: 25px; color:_text_; margin-bottom:15px; position:relative; top:-3px;}
+.text p.small{font-size: 12px}
+.text p b { font-weight: 600; color:_negro_;}
+.text a.view-all { font-weight: bold; color: _prim_; font-size:16px; line-height: 25px; display: inline-block; position: relative; top: -3px;}
+.text a.view-all:hover { color:_comp_; }
+
+/* Listas   */
+.text ul,
+.text ol{  margin-bottom: 16px; position: relative; top:2px;}
+
+.text li{}
+.text ul { margin-left:30px;}
+.text ul > li{ font-size:16px; line-height: 25px; color:_text_; padding-left:18px; position:relative; margin-bottom: 20px;}
+.text ul > li:before { content:"\2022"; font-size: 18px; line-height: 20px; color:_prim_; position: absolute; left:0; top:1px; font-weight: bold; display: block;}
+.text ol { margin-left:50px;}
+.text ol > li{ font-size:16px; line-height: 25px; color:_text_; position:relative; list-style: decimal outside;}
+.text dl{}
+.text dt{}
+.text dd{}
+
+/* ol.alt */
+.text ol.alt { margin-left: 0; counter-reset: li; padding-bottom: 24px; border-bottom: 1px solid _border_; margin-bottom: 25px;}
+.text ol.alt > li { position: relative; list-style: none; padding-left:25px; margin-bottom: 10px;  }
+.text ol.alt > li:before { content:'0'counter(li)'.'; counter-increment:li; font-size:16px; line-height: 25px; font-weight: 600; color:_negro_; display: inline-block; position: absolute; left:0; top:0;}
+.text ol.alt > li b { color:_negro_;}
+.text ol.alt > li ol { margin-left: 20px;}
+.text ol.alt > li ol > li { position: relative; list-style: lower-latin outside;}
+
+
+
+/* Tabla  */
+.text table {  width: 100%; margin-bottom:30px; }
+.text table th,
+.text table td{ padding:10px 15px; border-bottom:1px solid _border_; }
+.text table thead th{ font-size:15px; line-height:20px; font-weight:600; color:_negro_; text-align:center;}
+.text table tbody th{}
+.text table tbody td{ font-size:14px; line-height: 20px; color:_text_;}
+.text table tfoot td{}
+/*  Clases */
+.text .figure{ display: inline-block; border:1px solid _border_; margin-bottom:20px;}

@@ -1,0 +1,37 @@
+/*  Listas    */
+/* estructura de las listas, no modificar estas tags */
+.list .it {}
+.list .it > .tit {}
+
+/* list01 */
+.list01 { }
+.list01 > .it {}
+.list01 > .it > .tit { font-size: 16px; line-height: 25px; font-weight: 600; text-decoration: none; display: inline-block; position:relative; top:1px;}
+.list01 > .it > .tit:hover { color:_comp_;}
+.list01 > .it + .it { margin-top: 5px;}
+
+/* v01 */
+.list01 > .it > .tit { font-weight: normal;}
+
+/* list02 */
+.list02 { }
+.list02 > .it {  margin-bottom: 10px;}
+.list02 > .it > .tit { font-size: 18px; line-height: 25px; font-weight: 600; color: _negro_; margin-bottom: 10px;}
+.list02 > .it > a.tit { color:_prim_; text-decoration: none;}
+.list02 > .it > a.tit:hover { color:_comp_;}
+.list02 > .it > .months { position:relative; top:1px;}
+.list02 > .it > .months > a { font-size: 15px; line-height: 25px; text-decoration: none; padding-right: 15px; position: relative; display: inline-block; margin-bottom: 5px; }
+.list02 > .it > .months > a:after { content:""; display: block; width: 1px; height: 15px; background: _border_; position: absolute; right:0; top:6px;}
+.list02 > .it > .months > a + a { margin-left: 10px; }
+.list02 > .it > .months > a.left { margin-left: 0;}
+.list02 > .it > .months > a:hover { color:_comp_;}
+
+/* list03 */
+.list03 { margin-bottom:20px; }
+.list03 > .it { font-size:16px; line-height: 20px; padding:5px 0 5px 35px; position:relative;}
+.list03 > .it > b { display: inline-block; position: relative;  color:_negro_; font-weight: 600;}
+.list03 > .it > b:before {content: ""; display: block; position: absolute;}
+.list03 > .it > b.time:before { width: 18px; height: 18px; background: url({img:web:bg.png}) no-repeat -165px -155px; left: -34px; top:1px; }
+.list03 > .it > b.place:before { width: 14px; height: 23px; background: url({img:web:bg.png}) no-repeat -190px -155px; left:-33px; top:-2px; }
+.list03 > .it > b.phone:before { width: 17px; height: 17px; background: url({img:web:bg.png}) no-repeat -145px -175px; left:-33px; top:2px; }
+

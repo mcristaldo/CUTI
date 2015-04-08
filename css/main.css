@@ -1,0 +1,10 @@
+/*
+    Estilos que aplican a los hijos de #main
+    Si es necesario darle estilos a #main se debe ir a la hoja
+    layout.css
+*/
+#main > * {}
+#main > .hdr{ padding-bottom: 8px; border-bottom: 2px solid _negro_; margin-bottom: 25px; }
+#main > .hdr > .tit{ font-size: 22px; line-height: 30px; font-weight: 600; color:_negro_; position:relative; top:2px; text-transform: uppercase; letter-spacing: -0.02em; }
+#main > *:last-child { border-bottom:none; padding-bottom:0;}
+

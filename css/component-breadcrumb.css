@@ -1,0 +1,7 @@
+/*  breadcrumbs */
+#breadcrumb{  margin-bottom:15px; position: relative; top:-1px;}
+#breadcrumb > * { font-size:13px; line-height: 15px; position:relative; top:-1px; color:_gris_; }
+#breadcrumb strong { font-weight: normal; display: inline-block; }
+#breadcrumb a { display: inline-block; color:_gris_; text-decoration: underline; padding-right:16px; position: relative; margin-right:4px; }
+#breadcrumb a:after { content:"/"; font-size:12px; line-height: 15px; color:_gris_; position: absolute; right:0; top:0; text-decoration: none; }
+#breadcrumb a:hover { color:_prim_; text-decoration: none;}

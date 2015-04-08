@@ -1,0 +1,37 @@
+/*  Estilos genericos de los bloques. Para ser bloque tiene que necesariamente tener un header y un contenido.  */
+/* estructura de los bloques, no modificar estas tags */
+.blk {}
+.blk > .hdr{}
+.blk > .hdr > .tit{margin:0 !important;display:block;}
+.blk > .cnt{}
+.blk > .ftr{}
+
+/* blk01 */
+.blk01 { margin-bottom:30px; }
+.blk01 > .hdr{ position:relative; padding-bottom: 9px; border-bottom: 1px solid _border_; margin-bottom: 25px;}
+.blk01 > .hdr:after { content:""; display: block; clear: both; overflow: hidden;}
+.blk01 > .hdr > .tit{ font-size:20px; line-height: 25px; color:_negro_; font-weight: 600; float: left;}
+.blk01 > .hdr > .view-all { float: right; font-size: 15px; line-height: 25px; color:_prim_; text-decoration: none; font-weight: 600; position: relative; top:2px;}
+.blk01 > .hdr > .view-all:hover { color:_comp_;}
+.blk01 > .cnt { position:relative; top:1px;}
+.blk01 > .cnt > p { font-size:16px; line-height: 25px; color:_text_; margin-bottom: 10px; position:relative; top:1px; } 
+.blk01 > .cnt > a.more {  display: inline-block; font-size: 16px; font-weight: 600; line-height: 25px; }
+
+
+/* v01 */
+.blk01.v01 { padding-bottom:29px; border-bottom: 1px solid _border_;}
+
+
+/* blk02 */
+.blk02 { position: relative; }
+.blk02:after { content:""; display: block; clear: both; overflow: hidden;}
+.blk02 > .hdr > .date { font-size: 14px; line-height: 20px; color:_gris_; margin-bottom: 5px; position: relative; top: -1px;}
+.blk02 > .hdr > .tit { font-size: 18px; line-height: 25px; font-weight: 600; margin-bottom:5px; }
+.blk02 > .hdr > .tit > a { color:_prim_; text-decoration: none;}
+.blk02 > .hdr > .tit > a:hover { color:_comp_;}
+.blk02 > .cnt > p { font-size:16px; line-height: 25px; position: relative; top:1px; margin-bottom: 5px;}
+
+/* v01 */
+.blk02.v01 {  padding-left:240px; min-height: 155px; }
+.blk02.v01 > .cnt > .mg { border:1px solid _border_; margin-right: 25px; position: absolute; left:0; top:0;}
+

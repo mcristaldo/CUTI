@@ -1,0 +1,47 @@
+/*  gallery */
+#gallery {position:relative;height:0;z-index: 9999;}
+#gallery .bg{z-index:1;background:center center no-repeat rgba(0,0,0, 0.70);/*<bwr:ie8>*/background:center center no-repeat #194F8C;filter: alpha(opacity = 90);/*</bwr:ie8>*/position:fixed;top:0;left:0;bottom:0;right:0;}
+#gallery .gal{min-width: 500px;;z-index:2;padding:10px 40px 0;margin: 0 auto;position:relative;}
+#gallery.loading .bg{background-image:url('{img:gallery-loader.gif}') ;}
+#gallery > .btnClose{position:fixed;top:10px;right:10px;border:none;z-index:10;  width:50px;height:50px;background:red;display:block; }
+#gallery.loading > .btnClose{display:none;}
+/*  Full image*/
+#gallery .full {}
+#gallery .full img{display:block;margin:0 auto;}
+/**/
+#gallery .desc {position:fixed;bottom:0;right:0;left:0;background:#000;}
+#gallery .desc p{font-size:13px;padding:9px 70px 10px;}
+#gallery .desc .info {transition:all .2s ease-out;opacity:1;display:block; font-size:12px;display:block;line-height: 20px;;color:#555;}
+#gallery .desc .info.loading {opacity:0;}
+#gallery .desc .total {font-size:13px;display:block;line-height: 20px;position:relative;color:#fff;}
+#gallery .desc .total:first-child {padding-top:20px;}
+#gallery .desc .total strong{font-weight: normal;}
+/*  Flechas     */
+#gallery .btnClose{transition:opacity .3s ease-out;opacity:.7;overflow:hidden;text-indent:-99999px;width:50px;height:50px;  background:no-repeat url('{img:gallery-cruz.png}');cursor:pointer;}
+#gallery .btnPrev,
+#gallery .btnNext{transition:opacity .3s ease-out;opacity:.7;float:left;outline: none;cursor:pointer;display:block;border:none;width:50px;height:50px;background:no-repeat url('{img:gallery-arr.png}');}
+#gallery .btnPrev:hover,
+#gallery .btnClose:hover,
+#gallery .btnNext:hover{opacity:1; }
+#gallery .btnNext{float:right;}
+#gallery .btnPrev:active,
+#gallery .btnPrev.active{left:-3px;}
+#gallery .btnNext:active,
+#gallery .btnNext.active{right:-3px}
+#gallery .btnPrev[disabled],
+#gallery .btnNext[disabled]{display:none;}
+#gallery .btnPrev{left:0;background-position:12px center;}
+#gallery .btnNext{right:0;background-position:-40px center;}
+
+
+/* */
+.gallery {/*overflow:hidden;*/}
+.gallery ul {height: 80px;overflow: hidden;margin-bottom:10px;}
+.gallery ul li{float:left;}
+.gallery ul li + li{margin-left:40px;}
+.gallery ul li.relleno{background: #f9f9f9 url('{img:web:relleno.gif}');}
+.gallery ul a,
+.gallery ul img{display:block;}
+.gallery .tools{display:block;line-height: 20px;text-align: center;font-size:13px;}
+.gallery .tools .total{position:absolute;font-weight:normal;font-size:10px;color:#aaa;top:-1px;right:-65px;}
+.gallery .tools .btnAbrir{position:relative;font-weight: bold;}

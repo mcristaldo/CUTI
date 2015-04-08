@@ -1,0 +1,18 @@
+/*  pagination  */
+.pagination {text-align: center;font-size:16px;line-height:40px; color: _prim_; font-weight: 600;  }
+.pagination > *{display:inline-block;}
+.pagination > span { color:_gris_; font-weight: normal;}
+.pagination > a { text-decoration: none; }
+.pagination > a:hover { color:_comp_;}
+.pagination > .pages {margin:0 20px;}
+.pagination > .pages > * {margin:0 5px;text-decoration:none;display:inline-block;min-width:40px;font-weight: 600; }
+.pagination > .pages > a:hover { color:_comp_;}
+.pagination > .pages > strong {color:_blanco_;background:_prim_; border-radius: 2px; font-weight: 600;}
+
+
+/*  Paginado por ajax   */
+.ajax-pagination {text-align: center;}
+.ajax-pagination > .info{display:block;line-height:20px;font-size:15px;margin-bottom:20px;color:_negro_b119_; }
+.ajax-pagination button[disabled]{display:none;}
+.ajax-pagination button.loading{display:inline-block;text-align:left;text-indent: -999999px;background:url('{img:web:loader-01.gif}') no-repeat center;overflow:hidden;}
+

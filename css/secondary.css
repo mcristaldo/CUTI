@@ -1,0 +1,18 @@
+/*
+    Estilos que aplican a los hijos de #secondary.
+    Si es necesario darle estilos a #secondary se debe ir a la hoja
+    layout.css
+*/
+#secondary > * {}
+#secondary > .hdr { padding-bottom: 14px; border-bottom: 1px solid _border_; margin-bottom: 15px;}
+#secondary > .hdr .tit { font-size:16px; line-height: 20px; color:_negro_; font-weight: bold;}
+#secondary > .blk01 > .hdr { margin-bottom: 15px; padding-bottom:14px; }
+#secondary > .blk01 { margin-bottom:25px; }
+
+#secondary .aList01 > .it { padding-bottom:19px; margin-bottom:15px; min-height:70px; }
+#secondary .aList01 > .it > .hdr > .date { padding:0 16px 0 7px; border-right: 1px solid _border_; top:5px;}
+#secondary .aList01 > .it > .hdr > .date .day { font-size:30px; line-height: 30px;}
+#secondary .aList01 > .it > .hdr > .date .month, 
+#secondary .aList01 > .it > .hdr > .date .year { font-size: 15px;}
+#secondary .aList01 > .it > .hdr > .tit { font-size:16px;}
+#secondary .aList01 > .it > .cnt > .info > li { font-size: 14px; line-height: 20px;}

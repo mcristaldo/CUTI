@@ -1,0 +1,39 @@
+/*
+    Estilos que aplican a los hijos de #footer
+    Si es necesario darle estilos a #footer se debe ir a la hoja
+    layout.css
+*/
+
+#footer > * {position:relative;z-index:1}
+/* blkNewsletter */
+#footer > .blkNewsletter {  text-align: center; margin-bottom: 40px;}
+#footer > .blkNewsletter > .tit { display: block; font-size:20px; line-height: 30px; color:_negro_; text-transform:uppercase; font-weight: 600; margin-bottom: 20px; position: relative; top:2px; }
+
+/* input box */
+#footer > .blkNewsletter .box { background: #fff; border:1px solid _border_; padding:4px 4px 4px 20px;  box-sizing: border-box; margin: 0 auto 30px; width: 470px;}
+#footer > .blkNewsletter .box:after { property: AFTERCLEAR; }
+#footer > .blkNewsletter .box > input { width: 305px; height:40px; float:left; border:none; font-size:16px; font-family: inherit; }
+#footer > .blkNewsletter .box > .btn { padding:5px 20px;}
+
+/* list checkboxes */
+#footer > .blkNewsletter .mail-lists { text-align: center;}
+.js #footer > .blkNewsletter .mail-lists { display:none;}
+#footer > .blkNewsletter .mail-lists > .tit { font-size:16px; line-height: 25px; color:_negro_; font-weight: 600; display:block; text-transform: uppercase; margin-bottom: 15px;}
+#footer > .blkNewsletter .mail-lists > .lbl { display: block; }
+#footer > .blkNewsletter .mail-lists > .lbl label { display: inline-block; position: relative;}
+#footer > .blkNewsletter .mail-lists > .lbl label + label { margin-left:30px;}
+#footer > .blkNewsletter .mail-lists > .lbl input[type="checkbox"] { position:absolute; left:0; top:0; visibility: hidden; }
+#footer > .blkNewsletter .mail-lists > .lbl input[type="checkbox"] + b { padding-left:30px; display: inline-block; position: relative; font-size: 15px; line-height: 20px; font-weight: normal; vertical-align: top; }
+#footer > .blkNewsletter .mail-lists > .lbl input[type="checkbox"] + b:before { content:""; display:block; background: url('{img:web:bg.png}') no-repeat -145px -195px; position: absolute; left:0; top:1px; width:18px; height:18px; }
+#footer > .blkNewsletter .mail-lists > .lbl input[type="checkbox"]:checked + b:before {background-position: -145px -215px;}
+
+
+#footer > .bottom > .info > .social-links { float: right; font-size:14px; line-height: 20px; color:_negro_b119_;}
+#footer > .bottom > .info > .social-links .tit { display: inline-block; line-height: 50px; margin-right:15px;}
+#footer > .bottom > .info > .social-links a { display: inline-block; width: 50px; height: 50px; text-indent:-99000px; border-radius:2px; overflow: hidden; vertical-align: top; position: relative; background: _negro_b17_; margin-left: 5px; }
+#footer > .bottom > .info > .social-links .fb:before { content:""; display: block; width: 10px; height: 16px; background: url({img:web:bg.png}) no-repeat -365px -20px; position: absolute; top:17px; left:20px;}
+#footer > .bottom > .info > .social-links .fb:hover { background: #2c4e95; }
+#footer > .bottom > .info > .social-links .tw:before { content:""; display: block; width: 17px; height: 14px; background: url({img:web:bg.png}) no-repeat -380px -20px; position: absolute; top:18px; left:18px;}
+#footer > .bottom > .info > .social-links .tw:hover { background: #22a6e7; }
+#footer > .bottom > .info > .social-links .yt:before { content:""; display: block; width: 20px; height: 23px; background: url({img:web:bg.png}) no-repeat -400px -20px; position: absolute; top:13px; left:15px;}
+#footer > .bottom > .info > .social-links .yt:hover { background: #cc181e;}

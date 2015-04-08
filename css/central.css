@@ -1,0 +1,9 @@
+/* Estilos que se aplican a los hijos de #central.
+Para editar estilos especificos de la etiqueta #central modificar layout.css */
+
+#central:after { property: AFTERCLEAR;}
+.hdrimg #central:before { content: ""; display: block; left:-99000px; right: -99000px; top:-20px;; height: 155px; background: url({img:web:bgHeader.jpg}) no-repeat center top; position: absolute; }
+#central > .hdr{ padding-bottom: 8px; border-bottom: 2px solid _negro_; margin-bottom: 25px; position: relative; }
+#central > .hdr > .tit{ font-size: 22px; line-height: 30px; font-weight: 600; color:_negro_; position:relative; top:2px; text-transform: uppercase; letter-spacing: -0.03em;}
+#central > .hdr > .back { position: absolute; right:0; top:7px; font-size:15px; line-height: 20px; color:_text_;}
+

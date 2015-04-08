@@ -1,0 +1,32 @@
+/* Estilos de elementos genéricos de todo el sitio */
+
+html,
+body{min-height:100%;height:100%; background:#eeeeee; }
+body{property: font; color:_text_;font-size:10px;}
+hr{display: none;}
+
+a{outline:0!important;color:_plight_; transition:color 0.3s ease-in-out;}
+a:hover{ text-decoration: none; color:_comp_;}
+
+img{display:block}
+
+/* Compartir */
+.social{height: 20px;margin-bottom:15px;}
+.social > *{float:left;margin-right: 10px;}
+
+/* Mensajes */
+.msg { padding:10px 20px 10px 50px; position: relative; border-radius:3px; margin-bottom: 20px; }
+.msg p { font-size:14px; line-height: 20px; color:#fff;}
+
+.msg.ok { background: #77b854;}
+.msg.ok:before { content:""; display: block; width: 14px; height: 16px; background: url('{img:web:bg.png}') no-repeat -405px 0; position:absolute; left:17px; top:11px;}
+
+.msg.err { background: #eb4242;}
+.msg.err:before { content:""; display: block; width: 12px; height: 13px; background: url('{img:web:bg.png}') no-repeat -425px 0; position:absolute; left:19px; top:13px;}
+
+.msg.wrn { background: #ffc938;}
+.msg.wrn:before { content:""; display: block; width: 5px; height: 20px; background: url('{img:web:bg.png}') no-repeat -440px 0; position:absolute; left:22px; top:9px;}
+
+/* pic */
+.pic > img { border:1px solid _border_;}
+.pic > .legend { display: block; font-size: 14px; line-height: 20px; color:_gris_; margin-top:15px;}

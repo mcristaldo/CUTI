@@ -1,0 +1,20 @@
+/* las rows definen que sus hijos directos se comporten como columnas */
+
+.row > * {margin-bottom:0!important;}
+.row:after { property: AFTERCLEAR; }
+
+/* .row.n2 */
+.row.n2 { margin-bottom:30px;}
+.row.n2 > * { clear: left; float: left; width: 48%; box-sizing: border-box; position: relative; }
+.row.n2 > * + * {clear: right; float:right;}
+
+/* .row.n3 */
+.row.n3 { margin-bottom:35px; position: relative; top:1px;}
+.row.n3 > * { float: left; width: 30.6%; }
+.row.n3 > * + * {clear: right; margin-left: 40px;}
+
+
+/* .row.n4 */
+.row.n4 > * { float: left; width: 22%;}
+.row.n4 > * + * { margin-left: 4%;}
+

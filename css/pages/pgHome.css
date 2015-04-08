@@ -1,0 +1,32 @@
+/* en las hojas de estilo pgX
+ se cambian los estilos de elementos comunes
+  a otras partes del sitio que se visualizarán diferente en esta página */
+
+#pgHome {}
+#pgHome #wrapper { padding: 0; width: auto;}
+#pgHome #header { width: 980px; margin:0 auto; }
+#pgHome #footer { width: 980px; margin:70px auto 0;}
+#pgHome #central {  margin: 40px auto 0; width: 980px; }
+
+#pgHome #main > .banner {margin-bottom: 30px; padding-bottom: 29px; border-bottom:1px solid _border_; display: block;}
+    
+
+
+/* mainSlider */
+#pgHome #mainSlider { position:relative;}
+#pgHome #mainSlider .slider li { text-align: center; height: 400px; background-position: center center; background-size: cover; position:relative; }
+#pgHome #mainSlider .slider li .subtit { font-size:20px; line-height: 35px; text-transform: uppercase; color:_blanco_;text-shadow: 1px 1px 1px _negro_o30_; position: relative; top:90px;}
+#pgHome #mainSlider .slider li .subtit:before { content: ""; display:block; width: 125px; height: 1px; background: _blanco_o50_; left:-155px; box-shadow:1px 1px 1px 0 _negro_o30_; top:13px; position: absolute;}
+#pgHome #mainSlider .slider li .subtit:after { content: ""; display:block; width: 125px; height: 1px; background: _blanco_o50_; right:-155px; box-shadow:1px 1px 1px 0 _negro_o30_; top:13px; position: absolute;}
+#pgHome #mainSlider .slider li .tit { font-size:50px; line-height: 50px; font-weight: 600; color:_blanco_; text-transform: uppercase; text-shadow: 1px 1px 1px _negro_o30_; position: relative; top:100px;}
+#pgHome #mainSlider .slider li .tit:after { content:""; display: block; width: 192px; height: 10px;  background:url({img:web:bg.png}) no-repeat -240px -45px; margin: 25px auto 0; }
+#pgHome #mainSlider .slider li .btn03 {top:125px;}
+#pgHome #mainSlider .slider li.fullSize a {width: 100%;height: 100%;display: block;text-indent: -99999px}
+
+#pgHome #mainSlider .bx-controls {  bottom: 25px; left: 0;  position: absolute; text-align: center; width: 100%;}
+#pgHome #mainSlider .bx-wrapper .bx-controls .bx-pager-item { display: inline-block;}
+#pgHome #mainSlider .bx-wrapper .bx-controls .bx-pager-item .bx-pager-link {
+    background: url({img:web:bg.png}) no-repeat -340px 0; cursor: pointer; display: inline-block;
+    height: 20px; margin: 0 2px 0 3px; overflow: hidden; position: relative; text-indent: -99000px;width: 20px;}
+#pgHome #mainSlider .bx-wrapper .bx-controls .bx-pager-item .bx-pager-link.active, 
+#pgHome #mainSlider .bx-wrapper .bx-controls .bx-pager-item .bx-pager-link:hover { background-position: -315px 0;}    

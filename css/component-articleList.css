@@ -1,0 +1,55 @@
+/*  articleList */
+.articleList {}
+.articleList .it {}
+.articleList .it > .tit{}
+
+/* aList01 */
+.aList01 {}
+.aList01:after { property: AFTERCLEAR;}
+.aList01 > .it { position: relative; padding-left: 85px; padding-bottom: 19px; border-bottom: 1px solid _border_; margin-bottom: 30px; min-height: 90px;}
+.aList01 > .it.img { padding-top: 280px;}
+.aList01 > .it > .hdr { }
+.aList01 > .it > .hdr > .date { position: absolute; left:0; top:-5px;  color:_negro_b153_; text-transform: uppercase; text-align: center; }
+.aList01 > .it > .hdr > .date .day { font-size: 50px; line-height:50px; display: block; letter-spacing: -0.03em; font-weight: 600; } 
+.aList01 > .it > .hdr > .date .month,
+.aList01 > .it > .hdr > .date .year { display: block; font-size: 16px; line-height: 20px; }
+.aList01 > .it > .hdr > .tit { font-size:18px; line-height: 25px; font-weight: 600; margin-bottom: 5px;}
+.aList01 > .it > .hdr > .tit a { text-decoration: none;}
+.aList01 > .it > .hdr > .tit a:hover { color:_comp_;}
+.aList01 > .it > .cnt {}
+.aList01 > .it > .cnt > p { font-size:15px; line-height: 25px; display: inline; }
+.aList01 > .it > .cnt > .more { font-size:15px; line-height: 25px; margin-left: 5px; display: inline-block; font-weight: 600; }
+.aList01 > .it > .cnt > .more:hover { color:_comp_; text-decoration: none;}
+.aList01 > .it > .cnt > .info { }
+.aList01 > .it > .cnt > .info > li {font-size:16px; line-height: 25px;}
+.aList01 > .it > .cnt > .info > li b { color:_negro_;}
+.aList01 > .it > .cnt > .info > li .free { display: inline-block; background: #6bab17; padding:0 6px; border-radius: 2px; color:_blanco_; }
+.aList01 > .it.img > .cnt > .img { position: absolute; right:0; top:0;}
+
+.aList01 > .view-all { font-size: 14px; line-height: 20px; font-weight: 600; display: inline-block; float: right;}
+
+/* v01 */
+.aList01.v01 > .it { padding-left:325px; min-height: 210px; padding-bottom: 29px; }
+.aList01.v01 > .it > .cnt > .img { position: absolute; left:75px; top:0;}
+
+/* aList02 */
+.aList02 {  }
+.aList02:after { property: AFTERCLEAR;}
+.aList02 > .it { float:left; position:relative; z-index: 2; margin-right: 35px; text-align: center;  }
+.aList02 > .it > * { width: 190px; float:left; }
+.aList02 > .it:nth-child(3n) { float: none;  z-index: 1; margin-right: 0;}
+.aList02 > .it:nth-child(3n):after {  border-bottom: 1px solid _border_; clear: both; content: "";display: block; height: 24px; margin-bottom: 30px;} 
+.aList02 > .it .figure { border:1px solid _border_; box-sizing:border-box; margin-bottom: 15px;}
+.aList02 > .it .tit { font-size:18px; line-height: 20px; color:_negro_; font-weight: 600; margin-bottom:5px; }
+.aList02 > .it p { font-size:15px; line-height: 20px;}
+
+/* aList03 */
+.aList03 { margin-left:20px;  }
+.aList03:after { property: AFTERCLEAR;}
+.aList03 > .it { float:left; position:relative; z-index: 2; margin-right: 80px; text-align: center;  }
+.aList03 > .it:nth-child(4n) { float: none;  z-index: 1; margin-right: 0;}
+.aList03 > .it:nth-child(4n):after {  clear: both; content: "";display: block; height: 0px; margin-bottom: 40px;} 
+.aList03 > .it > * { width: 175px; float:left;  }
+.aList03 > .it .figure { border:1px solid _border_; margin-bottom: 15px;}
+.aList03 > .it .tit { font-size:16px; line-height: 25px; color:_negro_; font-weight: 600; margin-bottom:5px; }
+.aList03 > .it p { font-size: 15px; line-height: 25px; color:_text_;}

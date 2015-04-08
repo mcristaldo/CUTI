@@ -1,0 +1,45 @@
+/*
+    Estilos que aplican a los hijos de #header
+    Si es necesario darle estilos a #header se debe ir a la hoja
+    layout.css
+*/
+/*  HEADER  */
+#header > * { z-index: 2;}
+
+/* Parte superior */
+#header > .top { position: relative; min-height: 40px; padding:8px 0 0; box-sizing: border-box; }
+#header > .top > * { position:relative; }
+#header > .top:before { content: ""; display: block; position: absolute; left:-9000px; right:-9000px; top:0; bottom:0; background:_negro_; }
+#header > .top:after { content:""; display:block; clear:both; }
+#header > .top > #logo { position: absolute; left:-8px; top:0;  }
+#header > .top > #logo > a { width: 220px; height:125px; display: block; text-indent: -9900px; background:url("{img:web:bg.png}") no-repeat left top; }
+#header > .top #btnMiCompra { float:right;}
+#header > .top > .nav { float:right;}
+#header > .top > .nav > li { float: left; font-size:13px; line-height: 20px; position:relative; color: _blanco_o50_;}
+#header > .top > .nav > li + li { margin-left: 10px; }
+#header > .top > .nav > li > a { display: block; color:_blanco_; font-size:15px; font-weight: 600; transition:color 0.3s ease-in-out;}
+#header > .top > .nav > li > a > b { font-weight: bold; color:#000; font-size: 18px; line-height: 40px; display: block; transition:color 0.3s ease-in-out;}
+#header > .top > .nav > li > a:hover { text-decoration: none;}
+#header > .top > .nav > li + li + li { padding-left: 13px;}
+#header > .top > .nav > li + li + li:before { content: "/"; font-size: 10px; line-height: 20px; color:_negro_b136_; position: absolute; left:0; top:2px;}
+#header > .top > .nav > li.contact { padding-left: 17px; margin-left: 15px; top:3px; }
+#header > .top > .nav > li.contact a { display: block; text-indent: -99000px; width: 18px; height: 14px; background: url({img:web:bg.png}) no-repeat -240px -20px;}
+#header > .top > .nav > li.contact:before { content:""; width: 1px; background:_blanco_o15_; left:0; top:0; bottom:0; }
+
+/* Navegación */
+#header > #mainNav { position: relative; padding:30px 0; float: right; }
+#header > #mainNav:after,
+#header > #mainNav > .nav:after { property:AFTERCLEAR;}
+/* items menu */
+#header > #mainNav > .nav { float: left; position: relative;  }
+#header > #mainNav > .nav > li { float:left; font-size:15px; line-height: 25px; position:relative; }
+#header > #mainNav > .nav > li + li { margin-left: 15px; }
+#header > #mainNav > .nav > li > a,
+#header > #mainNav > .nav > li > strong { display: block; color:_text_; text-decoration: none; transition:color 0.3s ease-in-out; color:_prim_; text-transform: uppercase; font-weight: 600;}
+#header > #mainNav > .nav > li > strong,
+#header > #mainNav > .nav > li > .sld {color:_comp_;}
+#header > #mainNav > .nav > li > strong:before,
+#header > #mainNav > .nav > li > .sld:before { content:""; display: block; height: 3px; background: _comp_; position: absolute; left:0; right:0; bottom:-30px; }
+
+#header > #mainNav > .nav > li > a:hover { color:_comp_;}
+#header > #mainNav > .nav > li.current:after {   }
